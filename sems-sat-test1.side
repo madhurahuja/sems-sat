@@ -1,0 +1,192 @@
+{
+  "id": "3ad9f233-8175-4a13-a555-6a3a4319f663",
+  "version": "2.0",
+  "name": "Test",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "dd05a010-e08d-4cac-972b-f012473e0ca3",
+    "name": "test",
+    "commands": [{
+      "id": "183c0172-b6c3-4a6a-8ce7-f36ef5ba4222",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419d6a7b-d6cb-4dd8-8657-5deddb02784a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "776x416",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e1a013d-dd92-42b8-85ef-82f5dc739dd6",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=app-root",
+      "targets": [
+        ["css=app-root", "css:finder"],
+        ["xpath=//app-root", "xpath:position"]
+      ],
+      "value": "140,224"
+    }, {
+      "id": "ce36f046-3f2a-4ad7-b906-2857fb944301",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=app-root",
+      "targets": [
+        ["css=app-root", "css:finder"],
+        ["xpath=//app-root", "xpath:position"]
+      ],
+      "value": "140,224"
+    }, {
+      "id": "b685860d-3361-4777-8012-d4d8cce67c5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-root",
+      "targets": [
+        ["css=app-root", "css:finder"],
+        ["xpath=//app-root", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0596ad2f-1f93-408e-a19d-a9e44bad365a",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputEmail1",
+      "targets": [
+        ["id=exampleInputEmail1", "id"],
+        ["css=#exampleInputEmail1", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "28c34096-2344-44f1-b43a-2b9f83f7bc90",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputPassword1",
+      "targets": [
+        ["id=exampleInputPassword1", "id"],
+        ["css=#exampleInputPassword1", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "fecfd8ae-a28f-4205-af22-fd476ddaac85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check",
+      "targets": [
+        ["css=.form-check", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "704e9313-2082-42a7-a1fd-87c2a071f56e",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleCheck1",
+      "targets": [
+        ["id=exampleCheck1", "id"],
+        ["css=#exampleCheck1", "css:finder"],
+        ["xpath=//input[@id='exampleCheck1']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "944678bf-b224-434d-826c-2b635ca7f8e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e2c7a02-f02e-4db3-958a-3722256defcc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go somewhere",
+      "targets": [
+        ["linkText=Go somewhere", "linkText"],
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Go somewhere')]", "xpath:link"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go somewhere')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "717ff904-407a-4f67-b581-56cb9fbc8e6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .btn",
+      "targets": [
+        ["css=.card:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Go somewhere')])[2]", "xpath:link"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6485e87c-bb18-4406-b74e-2c68c330d627",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(3) .btn",
+      "targets": [
+        ["css=.card:nth-child(3) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Go somewhere')])[3]", "xpath:link"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a288ec0-31ce-4d39-8048-1c39e3f9fbe0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.router-link-active > img",
+      "targets": [
+        ["css=.router-link-active > img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61d81f91-a853-4132-8d7a-9751e4fd0027",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputEmail1",
+      "targets": [
+        ["id=exampleInputEmail1", "id"],
+        ["css=#exampleInputEmail1", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "33891533-0323-4573-9427-e7c713d02d1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputPassword1",
+      "targets": [
+        ["id=exampleInputPassword1", "id"],
+        ["css=#exampleInputPassword1", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }]
+  }],
+  "suites": [{
+    "id": "3cc96cf5-d3de-4ef6-8334-17cb8d96e826",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://madhurahuja.github.io/", "http://localhost:4200/"],
+  "plugins": []
+}

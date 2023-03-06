@@ -1,0 +1,83 @@
+{
+  "id": "8b207411-5d34-438b-8388-45d174edf61c",
+  "version": "2.0",
+  "name": "sems-sat",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "4280122c-cc49-4865-a281-c8ae3666838b",
+    "name": "Google",
+    "commands": [{
+      "id": "1ef5693a-a86f-432e-9051-3e83af1a58e7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b15beb4-a485-42a4-ae68-0c89f9bf651a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2694de3-dc96-4265-9a50-f3d45fdbd0db",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07785318-ae90-42d7-b9c9-8431f751af97",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "How to run selenium side runner"
+    }, {
+      "id": "5257749e-40b0-42fb-9462-e94fdf45e0ea",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d1bba28f-a085-4253-afd8-134759e2b25e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/block-component/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Selenium Side Runner: What It Is & How It Works | BrowserStack')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56fb9fa5-cdfc-4d55-8b68-042d56044652",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
