@@ -5,7 +5,7 @@
   "url": "http://localhost:4200",
   "tests": [{
     "id": "dd05a010-e08d-4cac-972b-f012473e0ca3",
-    "name": "test",
+    "name": "sems-sat-test1.side",
     "commands": [{
       "id": "183c0172-b6c3-4a6a-8ce7-f36ef5ba4222",
       "comment": "",

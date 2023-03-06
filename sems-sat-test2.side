@@ -5,7 +5,7 @@
   "url": "https://www.google.com",
   "tests": [{
     "id": "4280122c-cc49-4865-a281-c8ae3666838b",
-    "name": "Google",
+    "name": "sems-sat-test2.side",
     "commands": [{
       "id": "1ef5693a-a86f-432e-9051-3e83af1a58e7",
       "comment": "",
