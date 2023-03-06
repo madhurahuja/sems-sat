@@ -21,5 +21,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install -g selenium-side-runner 
+    - run: npm install -g selenium-side-runner
+    - run: npm install -g chromedriver
     - run: selenium-side-runner -c "chromeOptions.args=[disable-infobars, headless]" sems-sat-*.side
