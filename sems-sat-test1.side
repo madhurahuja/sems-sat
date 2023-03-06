@@ -1,7 +1,7 @@
 {
   "id": "3ad9f233-8175-4a13-a555-6a3a4319f663",
   "version": "2.0",
-  "name": "Test",
+  "name": "sems-sat",
   "url": "http://localhost:4200",
   "tests": [{
     "id": "dd05a010-e08d-4cac-972b-f012473e0ca3",
