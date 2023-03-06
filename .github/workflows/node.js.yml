@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+     - uses: abhi1693/setup-browser@v0.3.4
+           with:
+             browser: chrome
+             version: latest
     - uses: actions/checkout@v3
     - name: Use Node.js
       uses: actions/setup-node@v3
@@ -23,8 +27,5 @@ jobs:
         cache: 'npm'
     - run: npm install -g selenium-side-runner
     - run: npm install -g chromedriver
-    - run: |
-              VERSION_STRING="88.0.4324.96-1"
-              wget "https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${VERSION_STRING}_amd64.deb"
-              sudo dpkg -i "google-chrome-stable_${VERSION_STRING}_amd64.deb"
+
     - run: selenium-side-runner -c "chromeOptions.args=[disable-infobars, headless, no-sandbox]" sems-sat-*.side
