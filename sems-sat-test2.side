@@ -60,12 +60,12 @@
       "id": "d1bba28f-a085-4253-afd8-134759e2b25e",
       "comment": "",
       "command": "click",
-      "target": "css=.g:nth-child(2) .LC20lb",
+      "target": "css=#rso > .MjjYud:nth-child(1) .LC20lb",
       "targets": [
-        ["css=.g:nth-child(2) .LC20lb", "css:finder"],
-        ["xpath=//div[@id='rso']/div/div/block-component/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/a/h3", "xpath:idRelative"],
+        ["css=#rso > .MjjYud:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
         ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,'Selenium Side Runner: What It Is & How It Works | BrowserStack')]", "xpath:innerText"]
+        ["xpath=//h3[contains(.,'Command-line Runner · Selenium IDE')]", "xpath:innerText"]
       ],
       "value": ""
     }]
@@ -78,6 +78,6 @@
     "timeout": 300,
     "tests": []
   }],
-  "urls": ["http://localhost:4200/"],
+  "urls": ["http://localhost:4200/", "https://www.google.com/"],
   "plugins": []
 }

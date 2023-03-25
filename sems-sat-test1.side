@@ -17,7 +17,7 @@
       "id": "419d6a7b-d6cb-4dd8-8657-5deddb02784a",
       "comment": "",
       "command": "setWindowSize",
-      "target": "776x416",
+      "target": "1024x768",
       "targets": [],
       "value": ""
     }, {
@@ -109,6 +109,27 @@
       ],
       "value": ""
     }, {
+      "id": "bd9645c0-a633-49d1-a80b-bf88a206c806",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.evaluate(\"count(/html/body/app-root/div/app-core/div['.parent']/div['.card'])\",document.body,null, XPathResult.NUMBER_TYPE).numberValue;",
+      "targets": [],
+      "value": "numTiles"
+    }, {
+      "id": "1687abf3-761f-4a1c-8f38-524df7e10d27",
+      "comment": "",
+      "command": "echo",
+      "target": "${numTiles}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8dc2960-1738-460e-9c22-cf67cb14b51e",
+      "comment": "",
+      "command": "assert",
+      "target": "numTiles",
+      "targets": [],
+      "value": "3"
+    }, {
       "id": "5e2c7a02-f02e-4db3-958a-3722256defcc",
       "comment": "",
       "command": "click",
@@ -153,30 +174,6 @@
         ["xpath=//img", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "61d81f91-a853-4132-8d7a-9751e4fd0027",
-      "comment": "",
-      "command": "type",
-      "target": "id=exampleInputEmail1",
-      "targets": [
-        ["id=exampleInputEmail1", "id"],
-        ["css=#exampleInputEmail1", "css:finder"],
-        ["xpath=//input[@id='exampleInputEmail1']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "test"
-    }, {
-      "id": "33891533-0323-4573-9427-e7c713d02d1b",
-      "comment": "",
-      "command": "type",
-      "target": "id=exampleInputPassword1",
-      "targets": [
-        ["id=exampleInputPassword1", "id"],
-        ["css=#exampleInputPassword1", "css:finder"],
-        ["xpath=//input[@id='exampleInputPassword1']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": "test"
     }]
   }],
   "suites": [{
