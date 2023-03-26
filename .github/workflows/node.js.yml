@@ -17,8 +17,6 @@ jobs:
         sudo apt-get install -y chromium-browser chromium-chromedriver
         npm install -g selenium-side-runner
         npm install -g chromedriver
-        cat /home/runner/work/sems-sat/sems-sat-side1.side
-        cat /home/runner/work/sems-sat/sems-sat-side2.side
         which chromium-browser
         which chromium-chromedriver
         which chromedriver
