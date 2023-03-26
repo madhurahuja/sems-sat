@@ -1,31 +1,22 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+name: Selenium tests
 
-name: Node.js CI
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: abhi1693/setup-browser@v0.3.4
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
       with:
-       browser: chrome
-       version: latest
-    - uses: actions/checkout@v3
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm install -g selenium-side-runner
-    - run: npm install -g chromedriver
-
-    - run: selenium-side-runner -c "chromeOptions.args=[disable-infobars, headless, no-sandbox]" sems-sat-*.side
+        node-version: '16.x'
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser chromium-chromedriver
+        sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
+        npm install -g selenium-side-runner
+    - name: Run tests
+      run: |
+        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless=new]" sems-sat-*.side
