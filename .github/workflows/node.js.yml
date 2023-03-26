@@ -20,4 +20,4 @@ jobs:
     
     - name: Run tests
       run: |
-        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless=new]" sems-sat-side2.side
+        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless=new]" sems-sat-test2.side
